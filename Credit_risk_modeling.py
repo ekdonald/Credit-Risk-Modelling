@@ -53,7 +53,7 @@ from xgboost import cv
 # In[84]:
 
 
-df = pd.read_csv("./data/credit_risk_dataset.csv")
+df = pd.read_csv("credit_risk_dataset.csv")
 df.head(5)
 
 
