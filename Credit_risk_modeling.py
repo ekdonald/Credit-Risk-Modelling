@@ -134,7 +134,8 @@ df.groupby('loan_grade').head(2).reset_index(drop=True).sort_values(by='loan_gra
 # In[90]:
 
 
-# dropping rows with missing values 
+# dropping duplicate, and missing values rows
+df = df.drop_duplicates()
 df.dropna(inplace=True)
 
 
